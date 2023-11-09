@@ -1,0 +1,14 @@
+
+print("Здравствуйте! Вы вошли в программу МКАДометр")
+a = distans_of_ring_road = int (109)
+v = int (input("Введите скорость в км\ч: "))
+t = float (input("Введите время поездки в часах: "))
+b = distans_traveled = int (v*t)
+d = mark = int (b%a)
+result1 = ("Вы остановились на отметке: " + str(b) + " км")
+result2 = ("Вы остановились на отметке: " + str(d) + " км")
+
+if (b>=0) & (b<=a):
+	print (result1)
+if (b>a):
+	print (result2)
